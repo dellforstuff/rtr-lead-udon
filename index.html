@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<meta name="robots" content="noindex">
+<title>ลงทะเบียนรับข้อเสนอพิเศษ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header>
+  <h1>ลงทะเบียนรับข้อเสนอพิเศษ</h1>
+  <p>กรอกข้อมูลเพื่อให้เจ้าหน้าที่ติดต่อกลับ</p>
+</header>
+
+<div class="wrap">
+  <div id="shopView" class="hide">
+    <div class="shop" id="shopBox">
+      <span class="tag">ร้านที่แนะนำ</span>
+      <span class="nm" id="shopName">กำลังตรวจสอบ…</span>
+    </div>
+    <div class="banner" id="banner"></div>
+    <div id="formMount"></div>
+    <div class="done hide" id="done">
+      <div class="ic">&#10003;</div>
+      <h2>รับข้อมูลเรียบร้อยแล้ว</h2>
+      <p>เจ้าหน้าที่จะติดต่อกลับตามช่วงเวลาที่ท่านเลือก<br>กรุณารอรับสายจากหมายเลขของบริษัท</p>
+      <div class="ref" id="refNo"></div>
+    </div>
+  </div>
+
+  <div id="codeView" class="hide">
+    <div class="codebox">
+      <h2>กรอกรหัสร้าน 4 หลัก</h2>
+      <p>ดูรหัสได้จากใต้ QR code บนป้ายที่ร้าน</p>
+      <input id="code" maxlength="4" inputmode="latin" autocapitalize="characters"
+             autocomplete="off" placeholder="ABCD">
+      <div class="err" id="codeErr">กรุณากรอกรหัส 4 หลักให้ครบ</div>
+      <button id="go">ไปต่อ</button>
+    </div>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+<script>initAuto();</script>
+</body>
+</html>
